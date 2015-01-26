@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0047)https://dckreddy.shinyapps.io/shinyApp_Project/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<SCRIPT type="text/javascript">
+(function() {
+  // http://stackoverflow.com/questions/10964966/detect-ie-version-in-javascript
+  function isIE () {
+    var myNav = navigator.userAgent.toLowerCase();
+    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+  }
+
+  if (isIE() === 8 || isIE() === 9){
+    // Set an absolute base href.
+    baseURL = document.URL;
+    baseURL = baseURL.substring(0, baseURL.lastIndexOf('/'));
+    document.getElementsByTagName('base')[0].setAttribute('href', baseURL + '/_w_3e67388e/');
+  }
+})();
+</SCRIPT>
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<SCRIPT type="application/shiny-singletons"></SCRIPT>
+   
+<SCRIPT type="application/html-dependencies">json2[2014.02.04];jquery[1.11.0];shiny[0.11];ionrangeslider[2.0.2];bootstrap[3.3.1]</SCRIPT>
+ 
+<SCRIPT src=""></SCRIPT>
+ 
+<SCRIPT src=""></SCRIPT>
+ <LINK href="shared/shiny.css" rel="stylesheet"> 
+<SCRIPT src=""></SCRIPT>
+ <LINK href="shared/ionrangeslider/css/normalize.css" rel="stylesheet"> <LINK 
+href="shared/ionrangeslider/css/ion.rangeSlider.css" rel="stylesheet"> <LINK 
+href="shared/ionrangeslider/css/ion.rangeSlider.skinShiny.css" rel="stylesheet"> 
+<SCRIPT src=""></SCRIPT>
+ 
+<META name="viewport" content="width=device-width, initial-scale=1"> <LINK href="shared/bootstrap/css/bootstrap.min.css" 
+rel="stylesheet"> 
+<SCRIPT src=""></SCRIPT>
+ 
+<SCRIPT src=""></SCRIPT>
+ 
+<SCRIPT src=""></SCRIPT>
+   <TITLE>Example plot</TITLE> 
+<SCRIPT src=""></SCRIPT>
+ 
+<SCRIPT src=""></SCRIPT>
+ <LINK href="__assets__/shiny-server.css" rel="stylesheet" type="text/css"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17496"></HEAD> 
+<BODY>
+<DIV class="container-fluid">
+<DIV class="row">
+<DIV class="col-sm-12">
+<H1>Example plot</H1></DIV></DIV>
+<DIV class="row">
+<DIV class="col-sm-4">
+<FORM class="well">
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="mu">Guess 
+at the mean</LABEL>             
+<INPUT class="js-range-slider" id="mu" data-keyboard-step="0.416666666666667" data-keyboard="true" data-prettify-separator="," data-grid-snap="false" data-grid-num="10" data-grid="true" data-step="0.05" data-from="70" data-max="74" data-min="62"> 
+          </DIV></FORM></DIV>
+<DIV class="col-sm-8">
+<DIV class="shiny-plot-output" id="newHist" 
+style="width: 100%; height: 400px;"></DIV></DIV></DIV></DIV></BODY></HTML>

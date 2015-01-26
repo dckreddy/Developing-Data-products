@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Standard Normal Density App</TITLE>
+	<BASE TARGET="_blank">
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.1  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Ryan Cheung">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="c d">
+	<META NAME="CHANGED" CONTENT="20150125;17221057">
+	<META NAME="DESCRIPTION" CONTENT="Standard Normal Density App">
+	<META NAME="" CONTENT="">
+	<META NAME="apple-mobile-web-app-capable" CONTENT="yes">
+	<META HTTP-EQUIV="X-UA-Compatible" CONTENT="chrome=1">
+	<!-- This amazingness opens all links in a new tab. -->
+	<!-- Grab CDN jQuery, fall back to local if offline -->
+	<SCRIPT SRC="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></SCRIPT>
+	<SCRIPT>
+window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')
+</SCRIPT>
+	<SCRIPT SRC="libraries/frameworks/io2012/js/require-1.0.8.min.js"></SCRIPT>
+	<!-- LOGO SLIDE -->
+	<STYLE TYPE="text/css">
+	<!--
+		P { color: #000000 }
+		H1 { color: #000000 }
+		H2 { color: #000000 }
+		H2.cjk { font-family: "SimSun" }
+		H2.ctl { font-family: "Mangal" }
+		PRE { color: #000000 }
+		PRE.cjk { font-family: "NSimSun", monospace }
+		CODE.cjk { font-family: "NSimSun", monospace }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<H1>Standard Normal Density App</H1>
+<H2 CLASS="western">Developing Data Products course project</H2>
+<P>Chaitanya Duvvuru</P>
+<H2 CLASS="western"><!-- SLIDES -->Introduction to my shiny app</H2>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">The app is built using shiny and
+	hosted on shinyapps.io. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">You can try it <A HREF="https://ryancheung.shinyapps.io/Project">here</A>.
+		</P>
+	<LI><P>Basicly the app calculates probability of a score according
+	to standard normal density. 
+	</P>
+</OL>
+<H2 CLASS="western"><!-- Presenter Notes -->Math behind</H2>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">A standard normal distributed
+	variable is of form \(X\sim N(0,1)\) 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">The PDF is
+	\(f(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2}\) 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">A upper tail probability for a
+	score x is calculated using \(P(X&gt;x)\) 
+	</P>
+	<LI><P>A lower tail probability for a score x is calculated using
+	\(1-P(X&gt;x)\) 
+	</P>
+</OL>
+<H2 CLASS="western"><!-- Presenter Notes -->R code</H2>
+<OL>
+	<LI><P>The probability is calculated using R function pnorm() 
+	</P>
+</OL>
+<PRE CLASS="western"><CODE CLASS="western">x = 0.5</CODE>
+<CODE CLASS="western">lower = T</CODE>
+<CODE CLASS="western">pnorm(x, mean = 0, sd = 1, lower.tail = lower)</CODE>
+<CODE CLASS="western">## [1] 0.6915</CODE></PRE>
+<OL>
+	<LI><P>The value for x and wether user wants a lower probability or
+	a upper probability are based on user input. 
+	</P>
+</OL>
+<H2 CLASS="western"><!-- Presenter Notes -->Thank you!</H2>
+<UL>
+	<LI><P>This is the end of the slide, hope you enjoy the course as I
+	did. 
+	</P>
+</UL>
+<P><!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]--><!-- Load Javascripts for Widgets --><!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) --><SCRIPT>
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  
+</SCRIPT><SCRIPT SRC="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></SCRIPT><!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> --><SCRIPT>
+window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</SCRIPT><!-- LOAD HIGHLIGHTER JS FILES --><SCRIPT SRC="libraries/highlighters/highlight.js/highlight.pack.js"></SCRIPT><SCRIPT>
+hljs.initHighlightingOnLoad();
+</SCRIPT><!-- DONE LOADING HIGHLIGHTER JS FILES --></P>
+</BODY>
+</HTML>
