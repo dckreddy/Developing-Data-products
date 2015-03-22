@@ -61,10 +61,3 @@ punif(u)
 2. http://slidify.org/start.html
 
 3. http://slidify.org/samples/
-
---- .class #id 
-
-## Thank you!
-
-
- This is the last slide. 
