@@ -1,12 +1,12 @@
 ---
-title       : Developing Data Products - Course Project
+title       : Uniform Distribution Overview
 subtitle    : 
 author      : Chaitanya Duvvuru
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -46,8 +46,8 @@ punif(u)
 ```
 
 ```
-##  [1] 0.40130428 0.56691864 0.61840277 0.78665837 0.35761677 0.29840181
-##  [7] 0.07309905 0.11674883 0.75142923 0.64721125
+##  [1] 0.19684129 0.30102433 0.27358198 0.27745544 0.14394408 0.08944146
+##  [7] 0.40651424 0.23029982 0.42456423 0.85385268
 ```
 
 

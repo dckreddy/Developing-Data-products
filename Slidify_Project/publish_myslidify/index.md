@@ -1,0 +1,70 @@
+---
+title       : Uniform Distribution Overview
+subtitle    : 
+author      : Chaitanya Duvvuru
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Uniform Distribution presentation
+
+
+This presentation 
+
+1. Gives an overview of Uniform Distribution.
+
+2. Explains probability Distribution function with a mathematical fomula.
+
+3. provides R code commands for Uniform Distribution.
+
+--- .class #id 
+
+## Math Formulae
+
+
+1. Uniform distribution random variable is the form $U(a,b)$
+
+2. Probability Distribution Function  is $f(x)=\frac{1}{b-a}$ for a <= x <= b;
+                                                            0 for x < a or x > b
+
+--- .class #id 
+
+## R code
+
+
+The probability is calculated using R function punif()
+
+
+```r
+u <- runif(10) 
+punif(u)
+```
+
+```
+##  [1] 0.3474368 0.8852107 0.9486372 0.8754766 0.8560698 0.3165181 0.4429052
+##  [8] 0.0875782 0.1826985 0.6571575
+```
+
+
+--- .class #id 
+
+## References
+
+
+1. http://astrostatistics.psu.edu/su07/R/html/stats/html/Uniform.html
+
+2. http://slidify.org/start.html
+
+3. http://slidify.org/samples/
+
+--- .class #id 
+
+## Thank you!
+
+
+ This is the last slide. 
